@@ -4,7 +4,7 @@ function minDate(dates) {
 		return item.split("/")
 	})
 
-	let min=[0,0]
+	let min=[infinity,infinity]
 	let indices=0
 	newarr.map((item,index)=>{
 		if(parseInt(item[1])<min[0]){
