@@ -1,5 +1,29 @@
 function minDate(dates) {
-  //write you code here
+
+	let newarr=dates.map((item)=>{
+		return item.split("/")
+	})
+
+	let min=[0,0]
+	let indices=0
+	newarr.map((item,index)=>{
+		if(parseInt(item[1])<min[0]){
+min.shift()
+			min.unshift(parseInt(item[1])
+						min.pop()
+			min.push(parseInt(item[2]))
+			indices-index
+			
+		}
+		if(parseInt(item[1])==min[0] && parseInt(item[2])<min[1]){
+			min.pop()
+			min.push(item[2])
+			indices=index
+		}
+	})
+
+return dates.filter((_,index)=>index==indices)
+	
 }
 
 // Do not change the code
@@ -36,5 +60,5 @@ var dates = [
   "2023/03/29",
   "2023/03/30",
 ];
-
+// prompt("hello")
 alert(minDate(dates));
