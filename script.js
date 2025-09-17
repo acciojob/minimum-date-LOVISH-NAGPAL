@@ -12,12 +12,12 @@ min.shift()
 			min.unshift(parseInt(item[1])
 						min.pop()
 			min.push(parseInt(item[2]))
-			indices-index
+			indices=index
 			
 		}
 		if(parseInt(item[1])==min[0] && parseInt(item[2])<min[1]){
 			min.pop()
-			min.push(item[2])
+			min.push(parseInt(item[2]))
 			indices=index
 		}
 	})
